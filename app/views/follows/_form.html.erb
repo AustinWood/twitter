@@ -1,0 +1,5 @@
+<!-- <%= button_to "Follow", user_follow_url(user), method: :post %> -->
+<button class="follow_toggle"
+  data-user-id="<%= user.id %>"
+  data-follow-state= '<%= current_user.follows?(user) ? "followed" : "unfollowed" %>'>
+</button>
